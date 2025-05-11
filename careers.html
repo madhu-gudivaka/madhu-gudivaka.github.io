@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Current Openings | HSR Consultancy Ltd.</title>
+</head>
+<body style="font-family: sans-serif; background-color: #f4f4f4; padding: 2rem;">
+  <h1>Current Openings</h1>
+  <h2>Admin Executive</h2>
+  <p>
+    We are looking for a reliable and organized Admin Executive to manage administrative tasks, coordinate office activities, and ensure efficient internal operations.
+  </p>
+  <ul>
+    <li>Manage schedules and communication</li>
+    <li>Coordinate meetings, and document handling</li>
+    <li>Support HR and finance tasks (invoicing, payroll etc.)</li>
+  </ul>
+  <button onclick="document.getElementById('applyForm').style.display='block'" style="padding: 10px 20px;">Apply</button>
+
+  <div id="applyForm" style="display:none; margin-top: 2rem;">
+    <form action="https://formspree.io/f/mayzrwke" method="POST" enctype="multipart/form-data">
+      <label>Name:<br><input type="text" name="name" required></label><br><br>
+      <label>Email:<br><input type="email" name="email" required></label><br><br>
+      <label>Phone:<br><input type="tel" name="phone" required></label><br><br>
+      <label>Attach CV:<br><input type="file" name="cv" required></label><br><br>
+      <button type="submit" style="padding: 10px 20px;">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
