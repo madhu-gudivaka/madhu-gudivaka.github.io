@@ -2,30 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Current Openings | HSR Consultancy Ltd.</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #004466;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header h2 {
+      margin: 0.5rem 0 0;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    nav {
+      background: #003355;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .job-card {
+      background: #fff;
+      border-radius: 6px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .job-card h2 {
+      margin-top: 0;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #004466;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    form {
+      margin-top: 1.5rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0 16px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1.5rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; background-color: #f4f4f4; padding: 2rem;">
-  <h1>Current Openings</h1>
-  <h2>Admin Executive</h2>
-  <p>
-    We are looking for a reliable and organized Admin Executive to manage administrative tasks, coordinate office activities, and ensure efficient internal operations.
-  </p>
-  <ul>
-    <li>Manage schedules and communication</li>
-    <li>Coordinate meetings, and document handling</li>
-    <li>Support HR and finance tasks (invoicing, payroll etc.)</li>
-  </ul>
-  <button onclick="document.getElementById('applyForm').style.display='block'" style="padding: 10px 20px;">Apply</button>
+<body>
 
-  <div id="applyForm" style="display:none; margin-top: 2rem;">
-    <form action="https://formspree.io/f/mnndbgvw" method="POST" enctype="multipart/form-data">
-      <label>Name:<br><input type="text" name="name" required></label><br><br>
-      <label>Email:<br><input type="email" name="email" required></label><br><br>
-      <label>Phone:<br><input type="tel" name="phone" required></label><br><br>
-      <label>Attach CV:<br><input type="file" name="cv" required></label><br><br>
-      <button type="submit" style="padding: 10px 20px;">Submit</button>
-    </form>
+  <header>
+    <h1>HSR Consultancy Ltd.</h1>
+    <h2>Trading as Cynosure IT Consulting & Services</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="careers.html">Current Openings</a>
+  </nav>
+
+  <div class="container">
+    <h3>Current Openings</h3>
+
+    <div class="job-card">
+      <h2>Admin Executive</h2>
+      <p>
+        We are looking for a reliable and organized Admin Executive to manage administrative tasks, coordinate office activities, and ensure efficient internal operations.
+      </p>
+      <ul>
+        <li>Manage schedules and communication</li>
+        <li>Coordinate meetings and document handling</li>
+        <li>Support HR and finance tasks (invoicing, payroll etc.)</li>
+      </ul>
+      <button onclick="document.getElementById('applyForm').style.display='block'">Apply</button>
+
+      <div id="applyForm" style="display:none;">
+        <form action="https://formspree.io/f/mnndbgvw" method="POST" enctype="multipart/form-data">
+          <label>Name:<br><input type="text" name="name" required></label>
+          <label>Email:<br><input type="email" name="email" required></label>
+          <label>Phone:<br><input type="tel" name="phone" required></label>
+          <label>Attach CV:<br><input type="file" name="cv" required></label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
   </div>
+
+  <footer>
+    &copy; 2025 HSR Consultancy Ltd. | Cynosure IT Consulting & Services. All Rights Reserved.
+  </footer>
+
 </body>
 </html>
